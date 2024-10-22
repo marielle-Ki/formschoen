@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Formular</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="icon/m%20.svg" />
+
+        <meta name="author" content="Marielle Kirsten" />
+        <meta name="description" content="uebungsaufgabe_formulare" />
+    </head>
+
+    <body>
+        <div class="backgroundnav">
+            <div class="nav grid1200">
+                <div class="logo">
+                    <a href="index.html" target="_blank" rel="noopener noreferrer">
+                        <img src="images/Logo-V2.png" alt="Logo Formschön" />
+                    </a>
+                </div>
+
+                <div class="divnav">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Jubiläum</a></li>
+                            <li><a href="chronologie.html">Chronologie</a></li>
+                            <li><a href="#">Leistungen</a></li>
+                            <li><a href="massschuhe.html">Maßschuhe</a></li>
+                            <li><a href="pflegetipps.html">Pflegetipps</a></li>
+                            <li><a href="formular.html" class="current">Formular</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <a href="mailto:mariellekirsten96@gmail.com" class="contact-button"
+                    >Öffnungszeiten&nbsp;&amp;&nbsp;Kontakt</a
+                >
+            </div>
+        </div>
+
+        <header></header>
+
+        <main class="grid1200">
+            <section class="s1">
+                <div class="grid1200">
+                    <form action="senden.html" method="post">
+                        <h2>Nehmen Sie gerne Kontakt mit uns auf!</h2>
+
+                        <label>
+                            <span>Vorname</span>
+                            <input type="text" name="umfrage-vorname" id="vorname" placeholder="Max" required />
+                        </label>
+
+                        <label>
+                            <span>Nachname</span>
+                            <input type="text" name="umfrage-nachname" id="nachname" placeholder="Mustermann" required />
+                        </label>
+
+                        <label>
+                            <span>E-Mail(erforderlich)</span>
+                            <input type="email" name="email" id="email" required placeholder="mustermann@mail.com" />
+                        </label>
+
+                        <label>
+                            <span>Betreff</span>
+                            <input type="text" name="betreff" placeholder="Betreff" />
+                        </label>
+
+                        <label>
+                            <span>Nachricht verfassen</span>
+                            <textarea name="nachricht" id="nachricht"></textarea>
+                        </label>
+
+                        <button type="submit">Kontakt aufnehmen</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="s2">
+                <div class="grid1200">
+                    <form action="registrieren.html" method="post">
+                        <h2>Registrieren Sie sich</h2>
+                        <fieldset>
+                            <legend>Vorname</legend>
+                            <label>
+                                <input type="text" name="vorname" required />
+                            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Nachname</legend>
+                            <label>
+                                <input type="text" name="nachname" required />
+                            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>E-Mail</legend>
+                            <label>
+                                <input type="email" name="email" required placeholder="beispiel@mail.com" />
+                            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Passwort</legend>
+                            <label>
+                                <input
+                                    type="password"
+                                    name="passwort"
+                                    required
+                                    minlength="8"
+                                    placeholder="Mindestens 8 Zeichen" />
+                            </label>
+                        <label>
+                            <input type="password" name="passwort_bestaetigen" required minlength="8" placeholder="Passwort erneut eingeben">
+                        </label>
+                        </fieldset>
+
+
+                        <fieldset>
+                            <legend>Geschlecht</legend>
+                            <label> <input type="radio" name="geschlecht" value="männlich" /> Männlich </label>
+                            <label> <input type="radio" name="geschlecht" value="weiblich" /> Weiblich </label>
+                            <label> <input type="radio" name="geschlecht" value="divers" /> Divers </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Land</legend>
+                            <label>
+                                <select name="land">
+                                    <option value="" disabled selected>Bitte wählen Sie Ihr Land</option>
+                                    <option value="afghanistan">Afghanistan</option>
+                                    <option value="ägypten">Ägypten</option>
+                                    <option value="albanien">Albanien</option>
+                                    <option value="algerien">Algerien</option>
+                                    <option value="andorra">Andorra</option>
+                                    <option value="angola">Angola</option>
+                                    <option value="antigua">Antigua und Barbuda</option>
+                                    <option value="argentinien">Argentinien</option>
+                                    <option value="armenien">Armenien</option>
+                                    <option value="australien">Australien</option>
+                                    <option value="äthiopien">Äthiopien</option>
+                                    <option value="bahamas">Bahamas</option>
+                                    <option value="bahrain">Bahrain</option>
+                                    <option value="bangladesch">Bangladesch</option>
+                                    <option value="barbados">Barbados</option>
+                                    <option value="belgien">Belgien</option>
+                                    <option value="belize">Belize</option>
+                                    <option value="benin">Benin</option>
+                                    <option value="bhutan">Bhutan</option>
+                                    <option value="bolivien">Bolivien</option>
+                                    <option value="bosnien">Bosnien und Herzegowina</option>
+                                    <option value="botswana">Botswana</option>
+                                    <option value="brasilien">Brasilien</option>
+                                    <option value="brunei">Brunei</option>
+                                    <option value="bulgarien">Bulgarien</option>
+                                    <option value="burkina_faso">Burkina Faso</option>
+                                    <option value="burundi">Burundi</option>
+                                    <option value="chile">Chile</option>
+                                    <option value="china">China</option>
+                                    <option value="costa_rica">Costa Rica</option>
+                                    <option value="dänemark">Dänemark</option>
+                                    <option value="deutschland">Deutschland</option>
+                                    <option value="dom_rep">Dominikanische Republik</option>
+                                    <option value="dschibuti">Dschibuti</option>
+                                    <option value="ecuador">Ecuador</option>
+                                    <option value="el_salvador">El Salvador</option>
+                                    <option value="elfenbeinküste">Elfenbeinküste</option>
+                                    <option value="eritrea">Eritrea</option>
+                                    <option value="estland">Estland</option>
+                                    <option value="eswatini">Eswatini</option>
+                                    <option value="fidschi">Fidschi</option>
+                                    <option value="finnland">Finnland</option>
+                                    <option value="frankreich">Frankreich</option>
+                                    <option value="gabun">Gabun</option>
+                                    <option value="gambia">Gambia</option>
+                                    <option value="georgien">Georgien</option>
+                                    <option value="ghana">Ghana</option>
+                                    <option value="grenada">Grenada</option>
+                                    <option value="griechenland">Griechenland</option>
+                                    <option value="guatemala">Guatemala</option>
+                                    <option value="guinea">Guinea</option>
+                                    <option value="guyana">Guyana</option>
+                                    <option value="haiti">Haiti</option>
+                                    <option value="honduras">Honduras</option>
+                                    <option value="ungarn">Ungarn</option>
+                                    <option value="indien">Indien</option>
+                                    <option value="indonesien">Indonesien</option>
+                                    <option value="irak">Irak</option>
+                                    <option value="iran">Iran</option>
+                                    <option value="irland">Irland</option>
+                                    <option value="island">Island</option>
+                                    <option value="israel">Israel</option>
+                                    <option value="italien">Italien</option>
+                                    <option value="jamaika">Jamaika</option>
+                                    <option value="japan">Japan</option>
+                                    <option value="jordanien">Jordanien</option>
+                                    <option value="kasachstan">Kasachstan</option>
+                                    <option value="kenia">Kenia</option>
+                                    <option value="kirgisistan">Kirgisistan</option>
+                                    <option value="kiribati">Kiribati</option>
+                                    <option value="kolumbien">Kolumbien</option>
+                                    <option value="komoren">Komoren</option>
+                                    <option value="dem_rep_kongo">Demokratische Republik Kongo</option>
+                                    <option value="rep_kongo">Republik Kongo</option>
+                                    <option value="kosovo">Kosovo</option>
+                                    <option value="kroatien">Kroatien</option>
+                                    <option value="kuwait">Kuwait</option>
+                                    <option value="laos">Laos</option>
+                                    <option value="lettland">Lettland</option>
+                                    <option value="libanon">Libanon</option>
+                                    <option value="lesotho">Lesotho</option>
+                                    <option value="libyen">Libyen</option>
+                                    <option value="liechtenstein">Liechtenstein</option>
+                                    <option value="litauen">Litauen</option>
+                                    <option value="luxemburg">Luxemburg</option>
+                                    <option value="madagaskar">Madagaskar</option>
+                                    <option value="malawi">Malawi</option>
+                                    <option value="malaysia">Malaysia</option>
+                                    <option value="malediven">Malediven</option>
+                                    <option value="mali">Mali</option>
+                                    <option value="malta">Malta</option>
+                                    <option value="marokko">Marokko</option>
+                                    <option value="mauretanien">Mauretanien</option>
+                                    <option value="mauritius">Mauritius</option>
+                                    <option value="mexiko">Mexiko</option>
+                                    <option value="moldawien">Moldawien</option>
+                                    <option value="monaco">Monaco</option>
+                                    <option value="mongolei">Mongolei</option>
+                                    <option value="montenegro">Montenegro</option>
+                                    <option value="mosambik">Mosambik</option>
+                                    <option value="myanmar">Myanmar</option>
+                                    <option value="namibia">Namibia</option>
+                                    <option value="nepal">Nepal</option>
+                                    <option value="niederlande">Niederlande</option>
+                                    <option value="neuseeland">Neuseeland</option>
+                                    <option value="nicaragua">Nicaragua</option>
+                                    <option value="niger">Niger</option>
+                                    <option value="nigeria">Nigeria</option>
+                                    <option value="nordkorea">Nordkorea</option>
+                                    <option value="nordmazedonien">Nordmazedonien</option>
+                                    <option value="norwegen">Norwegen</option>
+                                    <option value="oman">Oman</option>
+                                    <option value="pakistan">Pakistan</option>
+                                    <option value="palau">Palau</option>
+                                    <option value="panama">Panama</option>
+                                    <option value="papua_neuguinea">Papua-Neuguinea</option>
+                                    <option value="paraguay">Paraguay</option>
+                                    <option value="peru">Peru</option>
+                                    <option value="philippinen">Philippinen</option>
+                                    <option value="polen">Polen</option>
+                                    <option value="portugal">Portugal</option>
+                                    <option value="katar">Katar</option>
+                                    <option value="rumänien">Rumänien</option>
+                                    <option value="russland">Russland</option>
+                                    <option value="ruanda">Ruanda</option>
+                                    <option value="samoa">Samoa</option>
+                                    <option value="san_marino">San Marino</option>
+                                    <option value="saudi_arabien">Saudi-Arabien</option>
+                                    <option value="senegal">Senegal</option>
+                                    <option value="serbien">Serbien</option>
+                                    <option value="seychellen">Seychellen</option>
+                                    <option value="sierra_leone">Sierra Leone</option>
+                                    <option value="singapur">Singapur</option>
+                                    <option value="slowakei">Slowakei</option>
+                                    <option value="slowenien">Slowenien</option>
+                                    <option value="somalia">Somalia</option>
+                                    <option value="spanien">Spanien</option>
+                                    <option value="sri_lanka">Sri Lanka</option>
+                                    <option value="südafrika">Südafrika</option>
+                                    <option value="südkorea">Südkorea</option>
+                                    <option value="südsudan">Südsudan</option>
+                                    <option value="schweden">Schweden</option>
+                                    <option value="schweiz">Schweiz</option>
+                                    <option value="syrien">Syrien</option>
+                                    <option value="taiwan">Taiwan</option>
+                                    <option value="tadschikistan">Tadschikistan</option>
+                                    <option value="tansania">Tansania</option>
+                                    <option value="thailand">Thailand</option>
+                                    <option value="togo">Togo</option>
+                                    <option value="tonga">Tonga</option>
+                                    <option value="trinidad_tobago">Trinidad und Tobago</option>
+                                    <option value="tunesien">Tunesien</option>
+                                    <option value="türkei">Türkei</option>
+                                    <option value="turkmenistan">Turkmenistan</option>
+                                    <option value="uganda">Uganda</option>
+                                    <option value="ukraine">Ukraine</option>
+                                    <option value="vereinigte_arabische_emirate">Vereinigte Arabische Emirate</option>
+                                    <option value="vereinigtes_koenigreich">Vereinigtes Königreich</option>
+                                    <option value="usa">USA</option>
+                                    <option value="uruguay">Uruguay</option>
+                                    <option value="usbekistan">Usbekistan</option>
+                                    <option value="vanuatu">Vanuatu</option>
+                                    <option value="venezuela">Venezuela</option>
+                                    <option value="vietnam">Vietnam</option>
+                                    <option value="jemen">Jemen</option>
+                                    <option value="sambia">Sambia</option>
+                                    <option value="simbabwe">Simbabwe</option>
+                                </select>
+                            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Newsletter abonnieren</legend>
+                            <label>
+                                <input type="checkbox" name="newsletter" /> Ja, ich möchte den Newsletter erhalten.
+                            </label>
+                        </fieldset>
+
+                        <button type="submit">Registrieren</button>
+                    </form>
+                </div>
+            </section>
+            
+           <section class="s3">
+    <div class="grid1200">
+        <form id="survey-form" action="umfrage.html" method="post">
+            <h2>Umfrageformular</h2>
+
+            <!-- Vorname -->
+            <fieldset>
+                <legend>Vorname</legend>
+                <label>
+                    <input type="text" name="vorname" required placeholder="Vorname" />
+                </label>
+                
+                <label>
+                    <input type="text" name="nachname" required placeholder="Nachname" />
+                </label>
+            </fieldset>
+
+            <!-- Alter -->
+            <fieldset>
+                <legend>Alter</legend>
+                <label>
+                    <input type="date" name="geburtsdatum" required />
+                </label>
+            </fieldset>
+
+            <!-- E-Mail-Adresse -->
+            <fieldset>
+                <legend>E-Mail</legend>
+                <label>
+                    <input type="email" name="email" required placeholder="E-Mail-Adresse" />
+                </label>
+            </fieldset>
+
+            <!-- Umfragefrage mit Checkboxen -->
+            <fieldset>
+                <legend>Welche dieser Optionen bevorzugen Sie?</legend>
+                <label><input type="checkbox" name="option1" value="Option 1" /> Option 1</label>
+                <label><input type="checkbox" name="option2" value="Option 2" /> Option 2</label>
+                <label><input type="checkbox" name="option3" value="Option 3" /> Option 3</label>
+            </fieldset>
+
+            <!-- Dropdown-Auswahl -->
+            <fieldset>
+                <legend>Wie haben Sie von uns erfahren?</legend>
+                <label>
+                    <select name="erfahren" required>
+                        <option value="" disabled selected>Bitte auswählen</option>
+                        <option value="Freunde">Freunde</option>
+                        <option value="Soziale Medien">Soziale Medien</option>
+                        <option value="Werbung">Werbung</option>
+                        <option value="Sonstiges">Sonstiges</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <!-- Feedback -->
+            <fieldset>
+                <legend>Feedback</legend>
+                <label>
+                    <textarea name="feedback" placeholder="Ihr Feedback"></textarea>
+                </label>
+            </fieldset>
+
+            <!-- Fortschrittsanzeige -->
+            <div class="progress-container">
+                <label>Fortschritt: <span id="progress-percentage">0%</span></label>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+
+            <button type="submit">Absenden</button>
+        </form>
+    </div>
+</section>
+        <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('survey-form');
+        const progress = document.querySelector('.progress');
+        const progressPercentage = document.getElementById('progress-percentage');
+
+        form.addEventListener('input', () => {
+            // Definiere die Anzahl der Pflichtfelder (ohne Feedback)
+            const totalFields = 5; // Vorname, Geburtsdatum, E-Mail, Checkboxen (mind. eine), Dropdown
+            let filledFields = 0;
+
+            // Überprüfe jedes Pflichtfeld
+            const vorname = form.querySelector('input[name="vorname"]');
+            const geburtsdatum = form.querySelector('input[name="geburtsdatum"]');
+            const email = form.querySelector('input[name="email"]');
+            const erfahren = form.querySelector('select[name="erfahren"]');
+            const checkboxes = form.querySelectorAll('input[type="checkbox"]');
+
+            // Prüfe, ob Vorname ausgefüllt ist
+            if (vorname && vorname.value.trim() !== "") filledFields++;
+
+            // Prüfe, ob Geburtsdatum ausgefüllt ist
+            if (geburtsdatum && geburtsdatum.value !== "") filledFields++;
+
+            // Prüfe, ob E-Mail ausgefüllt ist
+            if (email && email.value.trim() !== "") filledFields++;
+
+            // Prüfe, ob Dropdown ausgewählt ist
+            if (erfahren && erfahren.value !== "") filledFields++;
+
+            // Prüfe, ob mindestens eine Checkbox ausgewählt ist
+            let checkboxChecked = false;
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) checkboxChecked = true;
+            });
+            if (checkboxChecked) filledFields++;
+
+            // Berechne den Fortschritt in Prozent
+            const progressValue = Math.round((filledFields / totalFields) * 100);
+
+            // Aktualisiere die Fortschrittsleiste und den Prozentwert
+            progress.style.width = `${progressValue}%`;
+            progressPercentage.textContent = `${progressValue}%`;
+        });
+    });
+</script>
+         
+         
+          
+   
+        </main>
+
+        <footer>
+            <div class="backgroundnav">
+                <div class="footer grid1200">
+                    <div class="logo">
+                        <a href="index.html" target="_blank" rel="noopener noreferrer">
+                            <img src="images/Logo-V2.png" alt="Logo Formschön" />
+                        </a>
+                    </div>
+
+                    <div>
+                        <h3>Kontaktinformationen</h3>
+                        <p>Schuhmanufaktur<br />Bad Godesberg</p>
+                    </div>
+
+                    <div>
+                        <h3>Übungsaufgabe Formulare</h3>
+                        <p>HTML5+CSS3</p>
+                        <p>Marielle Kirsten</p>
+                        <p>USMG Winter 24b</p>
+                    </div>
+
+                    <div>
+                        <h3>Impressum | Datenschutz</h3>
+                        <p>&copy;2024 Schuhmanufaktur Formschön.</p>
+                        <p>Alle Rechte vorbehalten.</p>
+                    </div>
+
+                    <div class="socialmedia-div">
+                        <h3>social media</h3>
+
+                        <div class="socialmedia-icon">
+                            <div>
+                                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                                    <img src="icon/Facebook.svg" alt="Facebook link" />
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                                    <img src="icon/youtube.svg" alt="Youtube link" />
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="https://www.pinterest.de" target="_blank" rel="noopener noreferrer">
+                                    <img src="icon/pinteres.svg" alt="Pinterest link" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
